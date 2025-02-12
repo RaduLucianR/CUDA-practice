@@ -17,3 +17,5 @@ add_executable(generate_inputs src/generate_inputs.cpp)
 add_executable(mmul src/mmul.cu)
 
 add_executable(mmul_simple src/mmul_simple.cu)
+
+add_executable(temp src/templates.cpp)
