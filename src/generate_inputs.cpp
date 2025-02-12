@@ -51,8 +51,14 @@ int main(int argc, char* argv[]) {
         
         // Fill A and B with random floats in [0,1]
         for (int i = 0; i < N * N; ++i) {
-            A[i] = static_cast<float>(rand()) / RAND_MAX;
-            B[i] = static_cast<float>(rand()) / RAND_MAX;
+            // A[i] = static_cast<float>(rand()) / RAND_MAX;
+            // B[i] = static_cast<float>(rand()) / RAND_MAX;
+            int min = 1;
+            int max = 9;
+            int randNumA = rand()%(max - min + 1) + min;
+            int randNumb = rand()%(max - min + 1) + min;
+            A[i] = randNumA;
+            B[i] = randNumb;
         }
         
         // Measure CPU multiplication time for this test case
